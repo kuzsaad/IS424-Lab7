@@ -1,7 +1,11 @@
-document.querySelector("#colorForm").onsubmit = function(event) {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
 
-    let color = document.querySelector("#colorInput").value;
+    document.querySelector('#colorForm').onsubmit = function(event) {
+        event.preventDefault();
 
-    document.querySelector("#hello").style.color = color;
-};
+        let color = document.querySelector('#colorInput').value;
+
+        document.querySelector('h1').style.color = color;
+    };
+
+});
